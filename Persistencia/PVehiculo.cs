@@ -10,15 +10,15 @@ namespace Persistencia
 {
    public class PVehiculo
     {
-       //Creamos el metodo para eliminar
+       
        public static void Eliminar(Vehiculos _Vehiculo)
        {
-           SqlConnection _conexion = new SqlConnection(Conexion.con);//se crea una conexion con la base de datos utilizando la clase conexion.
-           SqlCommand _comando = new SqlCommand("EliminarVehiculo ",_conexion);//comando que ejecuta un Procedimiento almacenado en la base de datos.
+           SqlConnection _conexion = new SqlConnection(Conexion.con);
+           SqlCommand _comando = new SqlCommand("EliminarVehiculo ",_conexion);
            _comando.CommandType = CommandType.StoredProcedure;
 
            //se le dan los parametros para el PA
-           SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);//nombre parametro en PA y valor.
+           SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);
            //variable de retorno
            SqlParameter _retorno = new SqlParameter("@retorno", SqlDbType.Int);
            _retorno.Direction = ParameterDirection.ReturnValue;
