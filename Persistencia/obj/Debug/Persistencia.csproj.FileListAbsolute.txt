@@ -1,0 +1,11 @@
+D:\Temporales Estudios\Obligatorio Web\Persistencia\bin\Debug\Persistencia.dll
+D:\Temporales Estudios\Obligatorio Web\Persistencia\bin\Debug\Persistencia.pdb
+D:\Temporales Estudios\Obligatorio Web\Persistencia\obj\Debug\Persistencia.dll
+D:\Temporales Estudios\Obligatorio Web\Persistencia\obj\Debug\Persistencia.pdb
+C:\ObligatorioWeb\Persistencia\bin\Debug\Persistencia.dll
+C:\ObligatorioWeb\Persistencia\bin\Debug\Persistencia.pdb
+C:\ObligatorioWeb\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\ObligatorioWeb\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\ObligatorioWeb\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\ObligatorioWeb\Persistencia\obj\Debug\Persistencia.dll
+C:\ObligatorioWeb\Persistencia\obj\Debug\Persistencia.pdb

@@ -1,0 +1,13 @@
+D:\Temporales Estudios\Obligatorio Web\Logica\bin\Debug\Logica.dll
+D:\Temporales Estudios\Obligatorio Web\Logica\bin\Debug\Logica.pdb
+D:\Temporales Estudios\Obligatorio Web\Logica\obj\Debug\Logica.dll
+D:\Temporales Estudios\Obligatorio Web\Logica\obj\Debug\Logica.pdb
+C:\ObligatorioWeb\Logica\bin\Debug\Logica.dll
+C:\ObligatorioWeb\Logica\bin\Debug\Logica.pdb
+C:\ObligatorioWeb\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\ObligatorioWeb\Logica\bin\Debug\Persistencia.dll
+C:\ObligatorioWeb\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\ObligatorioWeb\Logica\bin\Debug\Persistencia.pdb
+C:\ObligatorioWeb\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\ObligatorioWeb\Logica\obj\Debug\Logica.dll
+C:\ObligatorioWeb\Logica\obj\Debug\Logica.pdb

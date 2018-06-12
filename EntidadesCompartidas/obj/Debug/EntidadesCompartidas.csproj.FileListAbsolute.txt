@@ -1,0 +1,8 @@
+D:\Temporales Estudios\Obligatorio Web\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+D:\Temporales Estudios\Obligatorio Web\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+D:\Temporales Estudios\Obligatorio Web\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+D:\Temporales Estudios\Obligatorio Web\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\ObligatorioWeb\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\ObligatorioWeb\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\ObligatorioWeb\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\ObligatorioWeb\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
