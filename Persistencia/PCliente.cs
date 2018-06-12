@@ -112,7 +112,7 @@ namespace Persistencia
 
         }
 
-        public static Clientes Buscar(int _Cedula)//capturo la matricula desde la pagina y devuelvo un cliente
+        public static Clientes Buscar(int _Cedula)
         {
 
             int tarjeta,telefono;
