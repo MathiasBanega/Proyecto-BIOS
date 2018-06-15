@@ -7,10 +7,9 @@ namespace EntidadesCompartidas
 {
    public class Autos:Vehiculos
     {
-        //atributos 
+     
         private string anclaje;
 
-        //propiedades
 
         public string Anclaje
         {
@@ -18,7 +17,7 @@ namespace EntidadesCompartidas
             set { anclaje = value; }
         }
 
-        //constructor completo
+       
        
         public Autos(string oMatricula,string oMarca,string oModelo, int oAño,int oPuertas,decimal oCosto,string oAnclaje)
             :base(oMatricula ,oMarca, oModelo, oAño, oPuertas, oCosto)
