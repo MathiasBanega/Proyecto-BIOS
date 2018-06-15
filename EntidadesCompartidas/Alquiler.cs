@@ -7,7 +7,7 @@ namespace EntidadesCompartidas
 {
     public class Alquiler
     {
-        //atributos
+        
         private int codigo;
         private Clientes cliente;
         private Vehiculos vehiculo;
@@ -16,7 +16,7 @@ namespace EntidadesCompartidas
         
 
 
-        //propiedades 
+        
         public int Codigo
         {
             get { return codigo; }
@@ -88,13 +88,13 @@ namespace EntidadesCompartidas
         {
             get
             {
-                int cantDias = (fechaFin.Subtract(fechaInicio)).Days;//consigue la cantidad de dias del alquiler y lo multiplica por el costo del vehiculo
+                int cantDias = (fechaFin.Subtract(fechaInicio)).Days;
                 return (this.vehiculo.Costo * cantDias);
             }
 
         }
 
-        //Constructor completo
+        
 
         public Alquiler(Clientes oCliente, Vehiculos oVehiculo, DateTime Inicio, DateTime Fin)
         {
@@ -103,7 +103,7 @@ namespace EntidadesCompartidas
             FechaInicio = Inicio;
             FechaFin = Fin;
         }
-        //constructor que contiene codigo
+        
         public Alquiler(Clientes oCliente, Vehiculos oVehiculo, DateTime Inicio, DateTime Fin,int oCodigo)
         {
             Cliente = oCliente;
