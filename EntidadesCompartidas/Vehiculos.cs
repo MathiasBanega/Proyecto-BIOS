@@ -8,7 +8,7 @@ namespace EntidadesCompartidas
    public class Vehiculos
     {
 
-       //atributos
+      
        private string matricula;
        private string marca;
        private string modelo;
@@ -16,7 +16,7 @@ namespace EntidadesCompartidas
        private int puertas;
        private decimal costo;
 
-       //propiedades
+      
 
        public string Matricula
        {
@@ -96,7 +96,7 @@ namespace EntidadesCompartidas
                }
        }
 
-       //constructor completo.
+       
        public Vehiculos(string oMatricula, string oMarca, string oModelo, int oAño, int oPuertas, decimal oCosto)
        {
            Matricula = oMatricula;

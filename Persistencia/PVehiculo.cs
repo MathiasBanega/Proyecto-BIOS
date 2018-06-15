@@ -17,12 +17,21 @@ namespace Persistencia
            SqlCommand _comando = new SqlCommand("EliminarVehiculo ",_conexion);
            _comando.CommandType = CommandType.StoredProcedure;
 
+<<<<<<< HEAD
            //parametros para el PA
            SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);
            //retorno
            SqlParameter _retorno = new SqlParameter("@retorno", SqlDbType.Int);
            _retorno.Direction = ParameterDirection.ReturnValue;
            
+=======
+           
+           SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);
+           
+           SqlParameter _retorno = new SqlParameter("@retorno", SqlDbType.Int);
+           _retorno.Direction = ParameterDirection.ReturnValue;
+          
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
            _comando.Parameters.Add(_matricula);
            _comando.Parameters.Add(_retorno);
 
@@ -31,7 +40,11 @@ namespace Persistencia
                _conexion.Open();
                _comando.ExecuteNonQuery();
 
+<<<<<<< HEAD
                
+=======
+              
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                if ((int)_retorno.Value == -1)
                    throw new Exception("El Vehiculo no existe.");
                else if ((int)_retorno.Value == -2)

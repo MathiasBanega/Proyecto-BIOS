@@ -7,7 +7,7 @@ namespace EntidadesCompartidas
 {
     public class Clientes
     {
-        //atributos 
+  
         private int cedula;
         private int tarjeta;
         private string nombre;
@@ -15,7 +15,7 @@ namespace EntidadesCompartidas
         private string direccion;
         private DateTime fechaN;
 
-        //propiedades
+        
         public int Cedula 
         {
             get { return cedula; }

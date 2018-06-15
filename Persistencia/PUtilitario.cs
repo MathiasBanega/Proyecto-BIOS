@@ -15,7 +15,11 @@ namespace Persistencia
             
             SqlConnection _conexion = new SqlConnection(Conexion.con);
             SqlCommand _comando = new SqlCommand("AgregarUtilitario ", _conexion);
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
             _comando.CommandType = CommandType.StoredProcedure;
             
             _comando.Parameters.AddWithValue("@mat", _Utilitario.Matricula);
@@ -35,11 +39,19 @@ namespace Persistencia
 
             try
             {
+<<<<<<< HEAD
                 
                 _conexion.Open();
                 
                 _comando.ExecuteNonQuery();
                
+=======
+               
+                _conexion.Open();
+        
+                _comando.ExecuteNonQuery();
+       
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                 if ((int)_retorno.Value == -1)
                     throw new Exception("Existe un vehiculo con esa matricula.");
                 else if ((int)_retorno.Value == 0)
@@ -56,11 +68,18 @@ namespace Persistencia
 
         public static void Modificar(Utilitarios _Utilitario)
         {
+<<<<<<< HEAD
             
             SqlConnection _conexion = new SqlConnection(Conexion.con);
            
             SqlCommand _comando = new SqlCommand("ModificarUtilitario ", _conexion);
           
+=======
+           
+            SqlConnection _conexion = new SqlConnection(Conexion.con);
+            
+            SqlCommand _comando = new SqlCommand("ModificarUtilitario ", _conexion);
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
             _comando.CommandType = CommandType.StoredProcedure;
             
             _comando.Parameters.AddWithValue("@mat", _Utilitario.Matricula);
@@ -100,7 +119,11 @@ namespace Persistencia
 
         public static Utilitarios Buscar(string _Matricula)
         {
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
             string matricula, modelo, marca, furgo;
             int año, puertas, capacidad;
             decimal costo;
@@ -112,7 +135,11 @@ namespace Persistencia
 
             try
             {
+<<<<<<< HEAD
                 
+=======
+              
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                 _conexion.Open();
                 
                 _lector = _comando.ExecuteReader();

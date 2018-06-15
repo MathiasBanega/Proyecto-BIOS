@@ -16,7 +16,11 @@ namespace EntidadesCompartidas
         
 
 
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
         public int Codigo
         {
             get { return codigo; }

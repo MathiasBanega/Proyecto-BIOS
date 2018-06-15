@@ -10,7 +10,11 @@ namespace Persistencia
 {
    public class PAlquiler
     {
+<<<<<<< HEAD
        
+=======
+      
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
        public static void Alquilar(Alquiler _Alquiler)
        {
            SqlConnection _conexion = new SqlConnection(Conexion.con);
@@ -49,7 +53,7 @@ namespace Persistencia
 
        public static List<Alquiler> ListaAlquileres(string _Matricula)//para total recaudado por vehiculo
        {
-           //va a ser el que muestre la lista en la caja          
+                  
            
            DateTime fechaI;
            DateTime fechaF;
@@ -84,7 +88,11 @@ namespace Persistencia
                    cedula = (int)_lector["ci"];
                    fechaI = (DateTime)_lector["FechaI"];
                    fechaF = (DateTime)_lector["fechaF"];
+<<<<<<< HEAD
                    codigo = (int)_lector["codigo"]; 
+=======
+                   codigo = (int)_lector["codigo"];  
+>>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                    costo = (decimal)_lector["costo"];
                    tarjeta = (int)_lector["tarjeta"];
                    telefono = (int)_lector["telefono"];
@@ -116,7 +124,7 @@ namespace Persistencia
            return _lista;
        }
 
-       public static decimal TotalRecaudado(string _Matricula)//para total recaudado por vehiculo
+       public static decimal TotalRecaudado(string _Matricula)
        {
            //va a ejecutar el PA para calcular el total que recaudo un vehiculo
            //y lo va a mostrar en el label de la pagina
