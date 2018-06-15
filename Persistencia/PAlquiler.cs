@@ -10,7 +10,7 @@ namespace Persistencia
 {
    public class PAlquiler
     {
-       //alquilar. faltaria listar disponibles y esas cosas, ver en donde lo meto.
+      
        public static void Alquilar(Alquiler _Alquiler)
        {
            SqlConnection _conexion = new SqlConnection(Conexion.con);
@@ -49,18 +49,18 @@ namespace Persistencia
 
        public static List<Alquiler> ListaAlquileres(string _Matricula)//para total recaudado por vehiculo
        {
-           //va a ser el que muestre la lista en la caja          
+                  
            
            DateTime fechaI;//
            DateTime fechaF;//
            int codigo;//
            Alquiler a = null;    
-           //cedula,nombre,tarjeta,telefono,direccion,nacimiento
+           
            Clientes c = null;
            int cedula,tarjeta,telefono;
            string nombre,direccion;
            DateTime nacimiento;
-           //matricula,marca,modelo,puertas,año,costo
+           
            Vehiculos v = null;
            string matricula,marca,modelo;
            int año,puertas;
@@ -70,7 +70,7 @@ namespace Persistencia
            List<Alquiler> _lista = new List<Alquiler>();
            SqlConnection _conexion = new SqlConnection(Conexion.con);
            SqlCommand _comando = new SqlCommand("HistorialAlquiler ", _conexion);
-           //es un procedimiento almacenado
+           
            _comando.CommandType = CommandType.StoredProcedure;
            _comando.Parameters.AddWithValue("@mat", _Matricula);
 
@@ -84,7 +84,7 @@ namespace Persistencia
                    cedula = (int)_lector["ci"];
                    fechaI = (DateTime)_lector["FechaI"];
                    fechaF = (DateTime)_lector["fechaF"];
-                   codigo = (int)_lector["codigo"]; //no guarda el valor al crear el objeto y queda en 0 siempre       
+                   codigo = (int)_lector["codigo"];  
                    costo = (decimal)_lector["costo"];
                    tarjeta = (int)_lector["tarjeta"];
                    telefono = (int)_lector["telefono"];
@@ -116,7 +116,7 @@ namespace Persistencia
            return _lista;
        }
 
-       public static decimal TotalRecaudado(string _Matricula)//para total recaudado por vehiculo
+       public static decimal TotalRecaudado(string _Matricula)
        {
            //va a ejecutar el PA para calcular el total que recaudo un vehiculo
            //y lo va a mostrar en el label de la pagina
@@ -130,7 +130,7 @@ namespace Persistencia
            {
                _conexion.Open();
                _lector = _comando.ExecuteReader();
-               if (_lector.Read())//tirar excepcion si devuelve null?
+               if (_lector.Read())
                    total = (decimal)_lector["Total_Vehiculo"];
                _lector.Close();
            }
