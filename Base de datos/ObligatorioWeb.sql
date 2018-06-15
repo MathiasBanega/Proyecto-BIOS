@@ -68,7 +68,7 @@ create table utilitarios
 go
 ------------------------------------------------------  /*insercion de datos*/  -----------------------------------------------------------------------------------
 
---Clientes /////posiblemente haya que cambiar las fechas de nacimiento
+--Clientes 
 insert clientes (ci,tarjeta,nombre,fechan,direccion,telefono) values (11111111,1111,'Pedro Gonzales','1985/5/20','Nueva Troya 1303',24804656)
 insert clientes (ci,tarjeta,nombre,fechan,direccion,telefono) values (22222222,2222,'Jose Morales','1991/7/10','Lafinur 2345',094865521)
 insert clientes (ci,tarjeta,nombre,fechan,direccion,telefono) values (33333333,3333,'Adriana Silva','1970/3/24','Martin C. Martinez 6740',22035648)
