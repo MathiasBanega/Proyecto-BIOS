@@ -10,28 +10,28 @@ namespace Persistencia
 {
    public class PVehiculo
     {
-       //Creamos el metodo para eliminar
+       
        public static void Eliminar(Vehiculos _Vehiculo)
        {
-           SqlConnection _conexion = new SqlConnection(Conexion.con);//se crea una conexion con la base de datos utilizando la clase conexion.
-           SqlCommand _comando = new SqlCommand("EliminarVehiculo ",_conexion);//comando que ejecuta un Procedimiento almacenado en la base de datos.
+           SqlConnection _conexion = new SqlConnection(Conexion.con);
+           SqlCommand _comando = new SqlCommand("EliminarVehiculo ",_conexion);
            _comando.CommandType = CommandType.StoredProcedure;
 
-           //se le dan los parametros para el PA
-           SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);//nombre parametro en PA y valor.
-           //variable de retorno
+           //parametros para el PA
+           SqlParameter _matricula = new SqlParameter("@mat",_Vehiculo.Matricula);
+           //retorno
            SqlParameter _retorno = new SqlParameter("@retorno", SqlDbType.Int);
            _retorno.Direction = ParameterDirection.ReturnValue;
-           //se cargan los valores al comando.
+           
            _comando.Parameters.Add(_matricula);
            _comando.Parameters.Add(_retorno);
 
            try
            {
-               _conexion.Open();//abre conexion
-               _comando.ExecuteNonQuery();//ejecuta el comando con todo cargado
+               _conexion.Open();
+               _comando.ExecuteNonQuery();
 
-               //se tiran los mensajes correspondiente segun el valor de la variable de retorno
+               
                if ((int)_retorno.Value == -1)
                    throw new Exception("El Vehiculo no existe.");
                else if ((int)_retorno.Value == -2)

@@ -14,7 +14,7 @@ namespace Persistencia
         {
             SqlConnection _conexion = new SqlConnection(Conexion.con);
             SqlCommand _comando = new SqlCommand("AgregarCliente ", _conexion);
-            //le digo que es un procedimiento almacenado
+            
             _comando.CommandType = CommandType.StoredProcedure;
             _comando.Parameters.AddWithValue("@cedula", _Cliente.Cedula);
             _comando.Parameters.AddWithValue("@nombre", _Cliente.Nombre);
@@ -112,7 +112,7 @@ namespace Persistencia
 
         }
 
-        public static Clientes Buscar(int _Cedula)//capturo la matricula desde la pagina y devuelvo un cliente
+        public static Clientes Buscar(int _Cedula)
         {
 
             int tarjeta,telefono;
