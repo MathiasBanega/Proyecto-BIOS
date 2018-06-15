@@ -17,9 +17,9 @@ namespace Persistencia
              SqlConnection _conexion = new SqlConnection(Conexion.con);
              SqlCommand _comando = new SqlCommand("AgregarAuto ", _conexion);
              _comando.CommandType = CommandType.StoredProcedure;
-              //se cargan los parametros en el comando
              
-             //matricula, marca,modelo,año,puertas,costo,anclaje
+             
+            
              _comando.Parameters.AddWithValue("@mat", _Auto.Matricula);
              _comando.Parameters.AddWithValue("@marca", _Auto.Marca);
              _comando.Parameters.AddWithValue("@mod", _Auto.Modelo);
@@ -149,7 +149,7 @@ namespace Persistencia
 
          public static List<Vehiculos> ListarAutos(DateTime _fechaI, DateTime _fechaF)
          {
-             //definir variables
+             
              string matricula;
              string marca;
              string modelo;
