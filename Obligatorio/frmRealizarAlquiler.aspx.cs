@@ -16,7 +16,7 @@ public partial class frmRealizarAlquiler : System.Web.UI.Page
 
     protected void Calendar1_SelectionChanged(object sender, EventArgs e)
     {
-       
+        
     }
     protected void btnAlquilar_Click(object sender, EventArgs e)
     {

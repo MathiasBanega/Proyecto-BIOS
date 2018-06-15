@@ -10,26 +10,16 @@ namespace Persistencia
 {
      public class PAuto
     {
-<<<<<<< HEAD
         
-=======
-       
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
 
          public static void Agregar(Autos _Auto)
          {
              SqlConnection _conexion = new SqlConnection(Conexion.con);
              SqlCommand _comando = new SqlCommand("AgregarAuto ", _conexion);
-<<<<<<< HEAD
              _comando.CommandType = CommandType.StoredProcedure; 
               
              
-=======
-             _comando.CommandType = CommandType.StoredProcedure;
              
-             
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
-            
              _comando.Parameters.AddWithValue("@mat", _Auto.Matricula);
              _comando.Parameters.AddWithValue("@marca", _Auto.Marca);
              _comando.Parameters.AddWithValue("@mod", _Auto.Modelo);
@@ -48,11 +38,7 @@ namespace Persistencia
                  _conexion.Open();
                  
                  _comando.ExecuteNonQuery();
-<<<<<<< HEAD
                  
-=======
-                
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                  if ((int)_retorno.Value == -1)
                      throw new Exception("Ya existe un vehiculo con esa matricula en el sistema.");
                  else if ((int)_retorno.Value == 0)
@@ -83,20 +69,14 @@ namespace Persistencia
              SqlParameter _retorno = new SqlParameter("@retorno", SqlDbType.Int);
              _retorno.Direction = ParameterDirection.ReturnValue;
 
-            
+             
              _comando.Parameters.Add(_retorno);
 
              try
              {
-<<<<<<< HEAD
                  
                  _conexion.Open();
                  
-=======
-                
-                 _conexion.Open();
-                
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                  _comando.ExecuteNonQuery();
                  
                  if ((int)_retorno.Value == -1)
@@ -117,11 +97,7 @@ namespace Persistencia
 
          public static Autos Buscar(string _mat)
          {
-<<<<<<< HEAD
              
-=======
-        
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
              string matricula;
              string marca;
              string modelo;
@@ -129,11 +105,7 @@ namespace Persistencia
              int puertas;
              decimal costo;
              string anclaje;
-<<<<<<< HEAD
              
-=======
-        
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
              Autos a = null;
 
              if (_mat.Length != 7)
@@ -145,22 +117,14 @@ namespace Persistencia
 
              try
              {
-<<<<<<< HEAD
                  
-=======
-                
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                  _conexion.Open();
                  
                  _Lector = _comando.ExecuteReader();
 
                  if (_Lector.Read())
                  {
-<<<<<<< HEAD
                      
-=======
-                    
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
                      matricula = (string)_Lector["matricula"];
                      marca = (string)_Lector["marca"];
                      modelo = (string)_Lector["modelo"];
@@ -180,16 +144,12 @@ namespace Persistencia
              finally
              { _conexion.Close(); }
 
-<<<<<<< HEAD
-             return a;            
-=======
-             return a;        
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
+             return a;
          }
 
          public static List<Vehiculos> ListarAutos(DateTime _fechaI, DateTime _fechaF)
          {
-             
+            
              string matricula;
              string marca;
              string modelo;

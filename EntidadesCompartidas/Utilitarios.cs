@@ -7,11 +7,11 @@ namespace EntidadesCompartidas
 {
    public class Utilitarios:Vehiculos
     {
-      
+        
         private int capacidad;
         private string furgoneta_pickup;
 
-      
+        
         public int Capacidad
         {
             get { return capacidad; }
@@ -29,7 +29,7 @@ namespace EntidadesCompartidas
             set { furgoneta_pickup = value; }
         }
 
-     
+        
 
         public Utilitarios(string oMatricula, string oMarca, string oModelo, int oAño, int oPuertas, decimal oCosto, int oCapacidad, string oFurgoneta_pickup)
             : base(oMatricula, oMarca, oModelo, oAño, oPuertas, oCosto)

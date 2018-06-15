@@ -8,7 +8,7 @@ namespace EntidadesCompartidas
    public class Vehiculos
     {
 
-      
+       
        private string matricula;
        private string marca;
        private string modelo;
@@ -16,7 +16,7 @@ namespace EntidadesCompartidas
        private int puertas;
        private decimal costo;
 
-      
+       
 
        public string Matricula
        {

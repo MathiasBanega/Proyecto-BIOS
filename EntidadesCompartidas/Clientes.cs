@@ -7,7 +7,7 @@ namespace EntidadesCompartidas
 {
     public class Clientes
     {
-  
+        
         private int cedula;
         private int tarjeta;
         private string nombre;
@@ -112,7 +112,7 @@ namespace EntidadesCompartidas
                 }
         }
 
-        //constructor completo.
+        
 
         public Clientes(int oCedula, int oTarjeta, string oNombre, int oTelefono, string oDireccion, DateTime oFecha)
         {

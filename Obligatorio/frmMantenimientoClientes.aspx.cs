@@ -85,9 +85,9 @@ public partial class frmMantenimientoClientes : System.Web.UI.Page
     {
         try
         {
-            //tomo los datos de la cedula
+            
             int cedula = Convert.ToInt32(txtCedula.Text);
-            //creo un objeto que busque al cliente y guarde los datos
+            
             Clientes c = LCliente.Buscar(cedula);
 
             if (c == null)

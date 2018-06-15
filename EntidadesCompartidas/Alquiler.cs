@@ -16,11 +16,7 @@ namespace EntidadesCompartidas
         
 
 
-<<<<<<< HEAD
-       
-=======
         
->>>>>>> 094a83d663c3d60f3ae1ecf4f733261056bda7af
         public int Codigo
         {
             get { return codigo; }
@@ -92,7 +88,7 @@ namespace EntidadesCompartidas
         {
             get
             {
-                int cantDias = (fechaFin.Subtract(fechaInicio)).Days;
+                int cantDias = (fechaFin.Subtract(fechaInicio)).Days;//consigue la cantidad de dias del alquiler y lo multiplica por el costo del vehiculo
                 return (this.vehiculo.Costo * cantDias);
             }
 
